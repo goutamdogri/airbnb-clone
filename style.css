@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    position: relative;
+    top: 180px;
+}
+
+/* =====================================================
+    header part
+======================================================*/
+.head {
+    height: 80px;
+    width: 89.3%;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dddddd;
+    position: fixed;
+    top: 0px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoName a img {
+    margin-left: 5px;
+}
+
+.empty {
+    width: 165.063px;
+    height: 80px;
+}
+
+.box {
+    box-shadow: 0px 2px 10px rgb(226, 226, 226);
+}
+
+.searchBar {
+    margin-left: 24px;
+    margin-right: 24px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.searchBar .box {
+    display: flex;
+    height: 46px;
+    border: 1px solid #dddddd;
+    border-radius: 40px;
+}
+
+.searchBar button {
+    background-color: transparent;
+    /* border: none; */
+}
+
+.firstBtn {
+    padding-left: 8px;
+    border-right: 1px solid #dddddd;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.firstBtn p {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.secondBtn {
+    border-right: 1px solid #dddddd;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+}
+
+.secondBtn p {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.thirdBtn {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.thirdBtn p {
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    font-weight: 100;
+    color: #909090;
+}
+
+.searchIcon {
+    width: 12px;
+    height: 12px;
+    margin-right: 7px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 60);
+}
+
+.homeSignIn {
+    /* border: 2px solid black; */
+    display: flex;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.homeText {
+    height: 42px;
+}
+
+.text {
+    line-height: 42px;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+.globe {
+    width: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.signIn {
+    border: 1px solid #dddddd;
+    width: 75px;
+    height: 40.4px;
+    border-radius: 21px;
+}
+
+.menuBar_profilePic {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+.profilePic {
+    height: 24px;
+    width: 24px;
+    border: 3.2px solid #717171;
+    border-radius: 50%;
+    background-color: #717171;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =====================================================
+    multiple travel site - options
+======================================================*/
+
+.section {
+    padding: 20px 80px;
+}
+
+.mul-travel-site {
+    width: 89.3%;
+    padding-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 60px;
+    z-index: 999;
+    background-color: white;
+    /* border-bottom: 1px solid #dddddd; */
+}
+
+.mul-travel-site-scroll {
+    width: 1200px;
+    height: 100px;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(45, auto);
+    gap: 32px;
+    /* border: 2px solid black; */
+    overflow: hidden;
+    transition: all 5s linear;
+}
+
+.forScroll {
+    transform: translateX(0px);
+    transition: all 0.5s linear;
+}
+
+.mul-travel-site-scroll div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.mul-travel-site-scroll div img {
+    width: 25px;
+    margin-bottom: 7px;
+    color: red;
+}
+
+.mul-travel-site-scroll div pre {
+    text-transform: capitalize;
+    font-size: 0.8rem;
+    font-family: "Roboto", sans-serif;
+    color: #555555;
+}
+
+.mul-travel-site-scroll div:hover,
+.mul-travel-site-scroll div pre:hover {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.left-arrow-nav,
+.right-arrow-nav {
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(164, 164, 164);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.hide {
+    /* width: 30px; */
+    /* height: 30px; */
+    display: none;
+}
+
+
+.left-arrow-nav:hover {
+    box-shadow: 0px 3px 20px rgb(201, 201, 201), 10px 0px 30px 20px rgb(255, 255, 255);
+}
+
+.right-arrow-nav:hover {
+    box-shadow: 0px 3px 20px rgb(201, 201, 201), 0px 10px 30px 30px rgb(255, 255, 255);
+}
+
+.left-arrow-nav {
+    box-shadow: 10px 0px 30px 30px rgb(255, 255, 255);
+}
+
+.right-arrow-nav {
+    box-shadow: 0px 10px 30px 30px rgb(255, 255, 255);
+}
+
+.left-arrow-nav i,
+.right-arrow-nav i {
+    font-weight: bolder;
+    /* text-decoration: none; */
+}
+
+.filter {
+    width: 89px;
+    height: 47px;
+    border: 1px solid rgb(164, 164, 164);
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.filter:hover,
+.filter:active {
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 0, "opsz" 24;
+}
+
+.filter p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.filter span {
+    font-size: 15px;
+    font-weight: 900;
+    margin-right: 7px;
+}
+
+/* =====================================================
+    display total price
+======================================================*/
+
+.display-total-price {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.display-total-price-box {
+    padding: 0px 20px;
+    width: 666px;
+    height: 64px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border: 1px solid rgb(203, 203, 203);
+    border-radius: 13px;
+}
+
+.display-total-price-box .text {
+    padding-right: 20px;
+    font-weight: 500;
+}
+
+.display-total-price-box .taxText {
+    padding-left: 20px;
+    margin-right: 239px;
+    color: #8a8a8a;
+    font-weight: 400;
+}
+
+.toggle {
+    width: 45px;
+    height: 30px;
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.togglerCircle {
+    width: 29px;
+    height: 29px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.togglerCircle i {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* =====================================================
+    travel destination
+======================================================*/
+
+.travel-destinations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+    cursor: pointer;
+}
+
+.destination-pics-box {
+    width: 325px;
+    height: 306px;
+    border-radius: 13px;
+    overflow: hidden;
+    position: relative;
+}
+
+.destination-pics {
+    width: max-content;
+    height: 100%;
+    border-radius: 13px;
+    display: flex;
+    transition: all 0.3s ease-out;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.destination-pics img {
+    width: 326px;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.arrow-button {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-arrow-nav-btn,
+.right-arrow-nav-btn {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.heart {
+    width: 24px;
+    height: 20.5px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    stroke-width: 2px;
+}
+
+.dot {
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+}
+
+.dot li {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(255, 255, 255, 0.521);
+    border-radius: 50%;
+    margin: 4px;
+    transition: all 0.5s linear;
+}
+
+.dot li.active {
+    background-color: white;
+}
+
+.destination-shortDetails-rating {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+
+}
+
+.destination-shortDetails {
+    display: grid;
+    gap: 5px;
+}
+
+.destination-location {
+    font-weight: 500;
+}
+
+.destination-distance,
+.destination-bookingDates {
+    color: #757575;
+}
+
+.destination-totalPrice {
+    margin-top: 10px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #3b3b3b;
+    text-decoration-thickness: 1px;
+}
+
+.destination-totalPrice span {
+    color: #757575;
+}
+
+.destination-rating i {
+    font-size: 13px;
+}
+
+.destination-rating span {
+    padding-top: 50px;
+    color: #2a2a2a;
+    font-size: 1.05rem;
+}
+
+/* =====================================================
+    footer part
+======================================================*/
+
+.footer-section {
+    /* padding-right: 80px; */
+    padding: 0px 80px;
+    width: 89.6%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more-info-left {
+    display: flex;
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.more-info-left span {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.more-info-left i {
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+.more-info-left a {
+    text-decoration: none;
+    color: #555555;
+}
+
+.more-info-left a:hover {
+    text-decoration: underline;
+}
+
+.more-info-right {
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.more-info-right .globe {
+    margin-right: 0px;
+}
+
+.rupee {
+    margin-left: 20px;
+}
+
+.rupee span {
+    margin-right: 5px;
+}
+
+.support {
+    margin-left: 20px;
+}

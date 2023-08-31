@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>airbnb-clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <div class="logoIcon">
+                    <a href="index.html">
+                        <img src="resources/airbnd_only_logo.png" alt="airbnb Logo" height="32px" width="30px" />
+                    </a>
+                </div>
+
+                <div class="logoName">
+                    <a href="index.html">
+                        <img src="resources/airbnb_logo_text.png" alt="airbnb" height="20px" />
+                    </a>
+                </div>
+                <div class="empty"></div>
+            </div>
+
+            <div class="searchBar">
+                <div class="box">
+                    <button type="button" class="firstBtn">
+                        <p>Anywhere</p>
+                    </button>
+
+                    <button type="button" class="secondBtn">
+                        <p>Any week</p>
+                    </button>
+
+                    <button type="button" class="thirdBtn">
+                        <p>Add guests</p>
+                        <div>
+                            <div class="searchIcon">
+                                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="homeSignIn">
+                <div class="homeText">
+                    <div class="text">Airbnb your home</div>
+                </div>
+
+                <div class="globe">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg width="16px" height="16px" viewBox="0 0 111.75746 114.34328" version="1.1" id="svg5"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs2" />
+                        <g id="layer1" style="stroke-width: 5; stroke-dasharray: none"
+                            transform="translate(-44.783592,-64.731335)">
+                            <ellipse style="
+                                fill: #000000;
+                                fill-opacity: 0;
+                                stroke: #000000;
+                                stroke-width: 10;
+                                stroke-linecap: round;
+                                stroke-dasharray: none;
+                                stroke-opacity: 1;
+                                " id="path111" cx="100.66232" cy="121.90298" rx="53.378731" ry="54.671642" />
+                            <path style="
+                                fill: #000000;
+                                fill-opacity: 0;
+                                stroke: #000000;
+                                stroke-width: 10;
+                                stroke-linecap: round;
+                                stroke-dasharray: none;
+                                stroke-opacity: 1;
+                            " id="path3554"
+                                d="m 120.84465,122.22251 a 20.317165,54.302242 0 0 1 -20.26434,54.30206 20.317165,54.302242 0 0 1 -20.36972,-54.01969 20.317165,54.302242 0 0 1 20.15842,-54.582959 20.317165,54.302242 0 0 1 20.47454,53.735849" />
+                            <path style="
+                                fill: #000000;
+                                fill-opacity: 0;
+                                stroke: #000000;
+                                stroke-width: 10;
+                                stroke-linecap: round;
+                                stroke-dasharray: none;
+                                stroke-opacity: 1;
+                            " id="path3558"
+                                d="M 152.30664,121.64227 A 52.636448,0.37505892 0 0 1 96.044884,121.95439 52.636448,0.37505892 0 0 1 47.74992,121.58061" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="signIn">
+                    <div class="menuBar_profilePic">
+                        <div class="menuBar">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+
+                        <div class="profilePic">
+                            <i class="fa-solid fa-user fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===================================================
+            multiple travel site - options
+        ==================================================== -->
+
+        <section class="section mul-travel-site">
+            <div class="left-arrow-nav toLeftHide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+
+            <div class="mul-travel-site-scroll">
+                <!-- <div>
+                    <div class="left-arrow-nav">
+                        <span class="material-symbols-outlined">
+                            chevron_left
+                        </span>
+                    </div>
+                </div> -->
+
+                <div class="forScroll farms">
+                    <img src="resources/mul-travel-site-pics/farms.jpg" alt="farms">
+                    <pre>Farms</pre>
+                </div>
+
+                <div class="forScroll rooms">
+                    <img src="resources/mul-travel-site-pics/rooms.jpg" alt="rooms">
+                    <pre>Rooms</pre>
+                </div>
+
+                <div class="forScroll amazing-views">
+                    <img src="resources/mul-travel-site-pics/amazing views.jpg" alt="amazing views">
+                    <pre>amazing views</pre>
+                </div>
+
+                <div class="forScroll beachfront">
+                    <img src="resources/mul-travel-site-pics/beachfront.jpg" alt="beachfront">
+                    <pre>beachfront</pre>
+                </div>
+
+                <div class="forScroll play">
+                    <img src="resources/mul-travel-site-pics/play.jpg" alt="play">
+                    <pre>play</pre>
+                </div>
+
+                <div class="forScroll amazing-pools">
+                    <img src="resources/mul-travel-site-pics/amazing pools.jpg" alt="amazing pools">
+                    <pre>amazing pools</pre>
+                </div>
+
+                <div class="forScroll cabins">
+                    <img src="resources/mul-travel-site-pics/cabins.jpg" alt="cabins">
+                    <pre>cabins</pre>
+                </div>
+
+                <div class="forScroll omg">
+                    <img src="resources/mul-travel-site-pics/omg.jpg" alt="omg">
+                    <pre>OMG!</pre>
+                </div>
+
+                <div class="forScroll tiny-homes">
+                    <img src="resources/mul-travel-site-pics/tiny homes.jpg" alt="tiny homes">
+                    <pre>tiny homes</pre>
+                </div>
+
+                <div class="forScroll lakefront">
+                    <img src="resources/mul-travel-site-pics/lakefront.jpg" alt="lakefront">
+                    <pre>lakefront</pre>
+                </div>
+
+                <div class="forScroll countryside">
+                    <img src="resources/mul-travel-site-pics/countryside.jpg" alt="countryside">
+                    <pre>countryside</pre>
+                </div>
+
+                <div class="forScroll national-parks">
+                    <img src="resources/mul-travel-site-pics/national parks.jpg" alt="national parks">
+                    <pre>national parks</pre>
+                </div>
+
+                <div class="forScroll islands">
+                    <img src="resources/mul-travel-site-pics/islands.jpg" alt="islands">
+                    <pre>islands</pre>
+                </div>
+
+                <div class="forScroll trending">
+                    <img src="resources/mul-travel-site-pics/trending.jpg" alt="trending">
+                    <pre>trending</pre>
+                </div>
+
+                <div class="forScroll tropical">
+                    <img src="resources/mul-travel-site-pics/tropical.jpg" alt="tropical">
+                    <pre>tropical</pre>
+                </div>
+
+                <div class="forScroll earth-homes">
+                    <img src="resources/mul-travel-site-pics/earth homes.jpg" alt="earth homes">
+                    <pre>earth homes</pre>
+                </div>
+
+                <div class="forScroll off-the-grid">
+                    <img src="resources/mul-travel-site-pics/off-the-grid.jpg" alt="off-the-grid">
+                    <pre>off-the-grid</pre>
+                </div>
+
+                <div class="forScroll luxe">
+                    <img src="resources/mul-travel-site-pics/luxe.jpg" alt="luxe">
+                    <pre>luxe</pre>
+                </div>
+
+                <div class="forScroll bed-breakfast">
+                    <img src="resources/mul-travel-site-pics/bed & breakfast.jpg" alt="bed & breakfast">
+                    <pre>bed & breakfast</pre>
+                </div>
+
+                <div class="forScroll camping">
+                    <img src="resources/mul-travel-site-pics/camping.jpg" alt="camping">
+                    <pre>camping</pre>
+                </div>
+
+                <div class="forScroll design">
+                    <img src="resources/mul-travel-site-pics/design.jpg" alt="design">
+                    <pre>design</pre>
+                </div>
+
+                <div class="forScroll castles">
+                    <img src="resources/mul-travel-site-pics/castles.jpg" alt="castles">
+                    <pre>castles</pre>
+                </div>
+
+                <div class="forScroll boats">
+                    <img src="resources/mul-travel-site-pics/boats.jpg" alt="boats">
+                    <pre>boats</pre>
+                </div>
+
+                <div class="forScroll domes">
+                    <img src="resources/mul-travel-site-pics/domes.jpg" alt="domes">
+                    <pre>domes</pre>
+                </div>
+
+                <div class="forScroll houseboats">
+                    <img src="resources/mul-travel-site-pics/houseboats.jpg" alt="houseboats">
+                    <pre>houseboats</pre>
+                </div>
+
+                <div class="forScroll historical-homes">
+                    <img src="resources/mul-travel-site-pics/historical homes.jpg" alt="historical homes">
+                    <pre>historical homes</pre>
+                </div>
+
+                <div class="forScroll treehouses">
+                    <img src="resources/mul-travel-site-pics/treehouses.jpg" alt="treehouses">
+                    <pre>treehouses</pre>
+                </div>
+
+                <div class="forScroll iconic-cities">
+                    <img src="resources/mul-travel-site-pics/iconic cities.jpg" alt="icon cities">
+                    <pre>iconic cities</pre>
+                </div>
+
+                <div class="forScroll surfing">
+                    <img src="resources/mul-travel-site-pics/surfing.jpg" alt="surfing">
+                    <pre>surfing</pre>
+                </div>
+
+                <div class="forScroll desart">
+                    <img src="resources/mul-travel-site-pics/desart.jpg" alt="desart">
+                    <pre>desart</pre>
+                </div>
+
+                <div class="forScroll top-of-the-world">
+                    <img src="resources/mul-travel-site-pics/top of the world.jpg" alt="top of the world">
+                    <pre>top of the world</pre>
+                </div>
+
+                <div class="forScroll towers">
+                    <img src="resources/mul-travel-site-pics/towers.jpg" alt="towers">
+                    <pre>towers</pre>
+                </div>
+
+                <div class="forScroll skiing">
+                    <img src="resources/mul-travel-site-pics/skiing.jpg" alt="skiing">
+                    <pre>skiing</pre>
+                </div>
+
+                <div class="forScroll casas-particulares">
+                    <img src="resources/mul-travel-site-pics/casas particulares.jpg" alt="casas particulares">
+                    <pre>casas particulares</pre>
+                </div>
+
+                <div class="forScroll vineyards">
+                    <img src="resources/mul-travel-site-pics/vineyards.jpg" alt="vineyards">
+                    <pre>vineyards</pre>
+                </div>
+
+                <div class="forScroll caves">
+                    <img src="resources/mul-travel-site-pics/caves.jpg" alt="caves">
+                    <pre>caves</pre>
+                </div>
+
+                <div class="forScroll a-frames">
+                    <img src="resources/mul-travel-site-pics/a-frames.jpg" alt="a-frames">
+                    <pre>a-frames</pre>
+                </div>
+
+                <div class="forScroll barns">
+                    <img src="resources/mul-travel-site-pics/barns.jpg" alt="barns">
+                    <pre>barns</pre>
+                </div>
+
+                <div class="forScroll arctic">
+                    <img src="resources/mul-travel-site-pics/arctic.jpg" alt="arctic">
+                    <pre>arctic</pre>
+                </div>
+
+                <div class="forScroll chef-kitchen">
+                    <img src="resources/mul-travel-site-pics/chef's kitchen.jpg" alt="chef's kitchen">
+                    <pre>chef's kitchens</pre>
+                </div>
+
+                <div class="forScroll new">
+                    <img src="resources/mul-travel-site-pics/new.jpg" alt="new">
+                    <pre>new</pre>
+                </div>
+
+                <div class="forScroll mansions">
+                    <img src="resources/mul-travel-site-pics/mansions.jpg" alt="mansions">
+                    <pre>mansions</pre>
+                </div>
+
+                <div class="forScroll golfing">
+                    <img src="resources/mul-travel-site-pics/golfing.jpg" alt="golfing">
+                    <pre>golfing</pre>
+                </div>
+
+                <div class="forScroll beach">
+                    <img src="resources/mul-travel-site-pics/beach.jpg" alt="beach">
+                    <pre>beach</pre>
+                </div>
+
+                <div class="forScroll lake">
+                    <img src="resources/mul-travel-site-pics/lake.jpg" alt="lake">
+                    <pre>lake</pre>
+                </div>
+            </div>
+
+            <div class="right-arrow-nav toRightHide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <div class="filter">
+                <span class="material-symbols-outlined">
+                    page_info
+                </span>
+                <p>Filters</p>
+            </div>
+        </section>
+
+        <!-- ===================================================
+            display total price
+        ==================================================== -->
+
+        <section class="section display-total-price">
+            <div class="display-total-price-box">
+                <p class="text">Display total price</p>
+                <p class="taxText">Includes all fees, before taxes</p>
+                <div class="toggle">
+                    <div class="togglerCircle">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================
+            travel destinations
+        ==================================================== -->
+        <section class="section travel-destinations">
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+                    <div class="destination-pics">
+                        <img src="resources/rooms/lindfield/lindfield1.webp" alt="" class="lindfield1">
+                        <img src="resources/rooms/lindfield/lindfield2.webp" alt="" class="lindfield2">
+                        <img src="resources/rooms/lindfield/lindfield3.webp" alt="" class="lindfield3">
+                        <img src="resources/rooms/lindfield/lindfield4.webp" alt="" class="lindfield4">
+                        <img src="resources/rooms/lindfield/lindfield5.webp" alt="" class="lindfield5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">lindfield, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+                    <div class="destination-pics">
+                        <img src="resources/rooms/london/london1.webp" alt="" class="london1">
+                        <img src="resources/rooms/london/london2.webp" alt="" class="london2">
+                        <img src="resources/rooms/london/london3.webp" alt="" class="london3">
+                        <img src="resources/rooms/london/london4.webp" alt="" class="london4">
+                        <img src="resources/rooms/london/london5.webp" alt="" class="london5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">london, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/rooms/lyon/lyon1.webp" alt="" class="lyon1">
+                        <img src="resources/rooms/lyon/lyon2.webp" alt="" class="lyon2">
+                        <img src="resources/rooms/lyon/lyon3.webp" alt="" class="lyon3">
+                        <img src="resources/rooms/lyon/lyon4.webp" alt="" class="lyon4">
+                        <img src="resources/rooms/lyon/lyon5.webp" alt="" class="lyon5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">lyon, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/rooms/milan/milan1.webp" alt="" class="milan1">
+                        <img src="resources/rooms/milan/milan2.webp" alt="" class="milan2">
+                        <img src="resources/rooms/milan/milan3.webp" alt="" class="milan3">
+                        <img src="resources/rooms/milan/milan4.webp" alt="" class="milan4">
+                        <img src="resources/rooms/milan/milan5.webp" alt="" class="milan5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">milan, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/rooms/nantes/nantes1.webp" alt="" class="nantes1">
+                        <img src="resources/rooms/nantes/nantes2.webp" alt="" class="nantes2">
+                        <img src="resources/rooms/nantes/nantes3.webp" alt="" class="nantes3">
+                        <img src="resources/rooms/nantes/nantes4.webp" alt="" class="nantes4">
+                        <img src="resources/rooms/nantes/nantes5.webp" alt="" class="nantes5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">nantes, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/rooms/palermo/palermo1.webp" alt="" class="palermo1">
+                        <img src="resources/rooms/palermo/palermo2.webp" alt="" class="palermo2">
+                        <img src="resources/rooms/palermo/palermo3.webp" alt="" class="palermo3">
+                        <img src="resources/rooms/palermo/palermo4.webp" alt="" class="palermo4">
+                        <img src="resources/rooms/palermo/palermo5.webp" alt="" class="palermo5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">palermo, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/rooms/paris/paris1.webp" alt="" class="paris1">
+                        <img src="resources/rooms/paris/paris2.webp" alt="" class="paris2">
+                        <img src="resources/rooms/paris/paris3.webp" alt="" class="paris3">
+                        <img src="resources/rooms/paris/paris4.webp" alt="" class="paris4">
+                        <img src="resources/rooms/paris/paris5.webp" alt="" class="paris5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">paris, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/rooms/seddon/seddon1.webp" alt="" class="seddon1">
+                        <img src="resources/rooms/seddon/seddon2.webp" alt="" class="seddon2">
+                        <img src="resources/rooms/seddon/seddon3.webp" alt="" class="seddon3">
+                        <img src="resources/rooms/seddon/seddon4.webp" alt="" class="seddon4">
+                        <img src="resources/rooms/seddon/seddon5.webp" alt="" class="seddon5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">seddon, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/farms/port antonio/port antonio1.webp" alt="" class="port antonio1">
+                        <img src="resources/farms/port antonio/port antonio2.webp" alt="" class="port antonio2">
+                        <img src="resources/farms/port antonio/port antonio3.webp" alt="" class="port antonio3">
+                        <img src="resources/farms/port antonio/port antonio4.webp" alt="" class="port antonio4">
+                        <img src="resources/farms/port antonio/port antonio5.webp" alt="" class="port antonio5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">port antonio, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/farms/uttarkashi/uttarkashi1.jpg" alt="" class="uttarkashi1">
+                        <img src="resources/farms/uttarkashi/uttarkashi2.webp" alt="" class="uttarkashi2">
+                        <img src="resources/farms/uttarkashi/uttarkashi3.webp" alt="" class="uttarkashi3">
+                        <img src="resources/farms/uttarkashi/uttarkashi4.webp" alt="" class="uttarkashi4">
+                        <img src="resources/farms/uttarkashi/uttarkashi5.webp" alt="" class="uttarkashi5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">uttarkashi, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/farms/thailand/thailand1.webp" alt="" class="thailand1">
+                        <img src="resources/farms/thailand/thailand2.webp" alt="" class="thailand2">
+                        <img src="resources/farms/thailand/thailand3.webp" alt="" class="thailand3">
+                        <img src="resources/farms/thailand/thailand4.webp" alt="" class="thailand4">
+                        <img src="resources/farms/thailand/thailand5.webp" alt="" class="thailand5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">thailand, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-destination-option">
+                <div class="destination-pics-box">
+
+                    <div class="destination-pics">
+                        <img src="resources/farms/khusuea/khusuea1.webp" alt="" class="khusuea1">
+                        <img src="resources/farms/khusuea/khusuea2.webp" alt="" class="khusuea2">
+                        <img src="resources/farms/khusuea/khusuea3.webp" alt="" class="khusuea3">
+                        <img src="resources/farms/khusuea/khusuea4.webp" alt="" class="khusuea4">
+                        <img src="resources/farms/khusuea/khusuea5.webp" alt="" class="khusuea5">
+                    </div>
+
+                    <div class="arrow-button">
+                        <div class="left-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="right-arrow-nav-btn">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <ul class="dot">
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+
+                </div>
+                <div class="destination-shortDetails-rating">
+                    <div class="destination-shortDetails">
+                        <div class="destination-location">khusuea, India</div>
+                        <div class="destination-distance">1,087 kilometres away</div>
+                        <div class="destination-bookingDates">5 nights <span>.</span>1-6 Sep</div>
+                        <div class="destination-totalPrice">₹79,882 <span>total before taxes</span></div>
+                    </div>
+                    <div class="destination-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </section>
+
+        <div class="section"></div>
+    </main>
+
+    <footer>
+        <section class="section footer-section">
+            <div class="more-info-left">
+                <i class="fa-regular fa-copyright"></i>
+                <p>2023 Airbnb,Inc.</p>
+                <span>•</span>
+                <a href="#">Privacy</a>
+                <span>•</span>
+                <a href="#">Terms</a>
+                <span>•</span>
+                <a href="#">Sitemap</a>
+                <span>•</span>
+                <a href="#">Company details</a>
+                <span>•</span>
+                <a href="#">Destinations</a>
+            </div>
+
+            <div class="more-info-right">
+                <div class="globe">
+                    <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+                    <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+                    <svg width="16px" height="16px" viewBox="0 0 111.75746 114.34328" version="1.1" id="svg5"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <defs id="defs2" />
+                        <g id="layer1" style="stroke-width: 5; stroke-dasharray: none"
+                            transform="translate(-44.783592,-64.731335)">
+                            <ellipse style="
+                                fill: #000000;
+                                fill-opacity: 0;
+                                stroke: #000000;
+                                stroke-width: 10;
+                                stroke-linecap: round;
+                                stroke-dasharray: none;
+                                stroke-opacity: 1;
+                                " id="path111" cx="100.66232" cy="121.90298" rx="53.378731" ry="54.671642" />
+                            <path style="
+                                fill: #000000;
+                                fill-opacity: 0;
+                                stroke: #000000;
+                                stroke-width: 10;
+                                stroke-linecap: round;
+                                stroke-dasharray: none;
+                                stroke-opacity: 1;
+                            " id="path3554"
+                                d="m 120.84465,122.22251 a 20.317165,54.302242 0 0 1 -20.26434,54.30206 20.317165,54.302242 0 0 1 -20.36972,-54.01969 20.317165,54.302242 0 0 1 20.15842,-54.582959 20.317165,54.302242 0 0 1 20.47454,53.735849" />
+                            <path style="
+                                fill: #000000;
+                                fill-opacity: 0;
+                                stroke: #000000;
+                                stroke-width: 10;
+                                stroke-linecap: round;
+                                stroke-dasharray: none;
+                                stroke-opacity: 1;
+                            " id="path3558"
+                                d="M 152.30664,121.64227 A 52.636448,0.37505892 0 0 1 96.044884,121.95439 52.636448,0.37505892 0 0 1 47.74992,121.58061" />
+                        </g>
+                    </svg>
+                </div>
+
+                <div class="lang">English(IN)</div>
+
+                <div class="rupee"><span>₹</span>INR</div>
+
+                <div class="support">Support & resources
+                    <i class="fa-solid fa-chevron-up"></i>
+                </div>
+            </div>
+
+        </section>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
